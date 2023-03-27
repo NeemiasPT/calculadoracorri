@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class testCalculadora {
+
+    public static void main(String[] args) {
+
+        int num;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite o numero: ");
+        while (!sc.hasNextInt()) {
+            System.out.print("Digite somente numeros");
+            sc.next();
+        }
+        num = sc.nextInt();
+        System.out.println("O numero e: " + num);
+        sc.close();
+    }
+}
